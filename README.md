@@ -31,3 +31,5 @@ You'll also need NodeJs
 
 After these steps, you're ready to use the application.
 Go to the front-end address: http://localhost:8189 
+
+By BERDIN Clément / CARON Samuel
