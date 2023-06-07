@@ -1,0 +1,14 @@
+version: '3'
+services:
+  react-app:
+    volumes:
+    - './client/dist:/usr/share/nginx/html:ro'
+    ports:
+    - '8189:80'
+    image: nginx
+
+  node-express:
+    build:
+      context: ./server
+    ports:
+    - '5394:5394'
