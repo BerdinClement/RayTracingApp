@@ -36,13 +36,13 @@ export default function Home() {
         e.preventDefault()
         setIsLoading(true)
 
-        const formData = new FormData()
-        formData.append('uploadedfile', file)
+        const formData = new FormData();
+        formData.append('uploadedfile', file);
 
-        const response = await fetch('http://localhost:5394/upload', JSON.stringify({
+        const response = await fetch('http://localhost:5394/upload', {
             method: 'POST',
-            body: formData
-        }))
+            body: formData,
+        });
 
         const data = await response.json()
 
